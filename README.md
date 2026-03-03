@@ -46,4 +46,5 @@ task-cli list done
 task-cli list todo  
 task-cli list mark-in-progress  
 ```
-https://github.com/tridev09-ops/task-tracker-cli/
+
+https://roadmap.sh/projects/task-tracker
