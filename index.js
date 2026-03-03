@@ -51,7 +51,7 @@ async function addTask(task) {
 
         await writeFile(fileName,
             str)
-        console.log('Task added')
+        console.log('Task added successfully with id', task.id)
     } catch(err) {
         if (err) {
             console.error('Error writing to file:', err)
@@ -77,7 +77,7 @@ async function updateTask(id, desc) {
 
         await writeFile(fileName,
             str)
-        console.log('Task updated')
+        console.log('Task updated with id', id)
     } catch(err) {
         if (err) {
             console.error('Error writing to file:', err)
@@ -97,7 +97,7 @@ async function deleteTask(id) {
 
         await writeFile(fileName,
             str)
-        console.log('Task deleted')
+        console.log('Task deleted with id', id)
     } catch(err) {
         if (err) {
             console.error('Error writing to file:', err)
@@ -123,7 +123,7 @@ async function markTask(id, status) {
 
         await writeFile(fileName,
             str)
-        console.log('Task matked as', status)
+        console.log('Task marked as', status)
     } catch(err) {
         if (err) {
             console.error('Error writing to file:', err)
